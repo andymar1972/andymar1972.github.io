@@ -1,0 +1,117 @@
+.footer {
+    background: $color-header;
+    flex-direction: column;
+    color: white;
+}
+
+.footer-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 95%;
+    margin: 0 auto;
+}
+.footer-wrap:nth-child(2){
+    display: none;
+}
+
+.footer__logo {
+    width: 10rem;
+    align-self: center;
+    margin: 0.8rem 0%;
+}
+
+.footer__text {
+    margin-top: 0.3rem;
+}
+
+.niveles-enlaces {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    align-items: flex-start;
+}
+
+.niveles-enlaces__link {
+    display: inline-block;
+    color: inherit;
+    margin-top: 0.2rem;
+}
+
+.footer__redes {
+    display: flex;
+    justify-content: center;
+    background-color: $color-button;
+    margin-top: 1rem;
+    border: 2px solid black;
+}
+
+.footer__redes__link {
+    width: 1.4rem;
+    margin: 0.7rem 0.6rem;
+}
+
+.footer__redes__img {
+    display: block;
+    width: 100%;
+}
+
+// RWD TABLET
+@include tablet {
+    .footer-wrap:first-child {
+        display: none;
+    }
+
+    .footer__logo {
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    .footer-wrap:nth-child(2) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 2.5rem 0.3rem;
+        grid-gap: 1rem;
+    }
+
+    .footer__redes {
+        margin: 0;
+    }
+    .footer-column{
+        margin: auto;
+    }
+
+    .footer-wrap__item:last-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .footer-wrap__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        margin: 0.3rem 0;
+    }
+
+    .footer-wrap__img {
+        width: 1.6rem;
+        height: auto;
+        flex: none;
+    }
+
+    .footer-wrap__text {
+        font-size: 1rem;
+    }
+}
+@include desktop{
+    .footer{
+        font-size: 1.13rem;
+    }
+    .footer-wrap__text {
+        font-size: 1rem;
+    }
+}

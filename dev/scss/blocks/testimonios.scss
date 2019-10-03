@@ -1,0 +1,50 @@
+.testimonios{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 3em;
+    padding: 2.5rem 0;
+}
+.testimonios__items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.testimonios__items__img{
+    width: 50%;
+    clip-path: circle(45% at 50% 50%);
+}
+.testimonios__items__text{
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+@include tablet{
+    .testimonios{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 0;
+    }
+    .testimonios__items__img{
+        width: 70%;
+        clip-path: circle(45% at 50% 50%);
+    }
+}
+
+@include laptop2{
+    .testimonios__items__text{
+        margin-top: 2rem;
+    }
+    .testimonios__items__img{
+        width: 50%;
+        clip-path: circle(45% at 50% 50%);
+    }
+}
+@include desktop{
+    .testimonios__items__text{
+        font-size: 1.3rem;
+    }
+}
