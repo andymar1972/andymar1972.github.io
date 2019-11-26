@@ -17,7 +17,7 @@
 }
 
 .footer__logo {
-    width: 10rem;
+    width: 4.2rem;
     align-self: center;
     margin: 0.8rem 0%;
 }
@@ -73,6 +73,7 @@
         grid-template-columns: 1fr 1fr 1fr;
         padding: 2.5rem 0.3rem;
         grid-gap: 1rem;
+        max-width: 1400px;
     }
 
     .footer__redes {
